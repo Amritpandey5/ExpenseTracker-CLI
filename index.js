@@ -23,10 +23,11 @@ program.command('update <id>')
     log(result.success ? chalk.green(result.msg) : chalk.red(result.msg))
 })
 
-program.command('delete <id>')
-.action((id) =>{
-    const result = deleteExpance(Number(id))
-    log(result.success ? chalk.green(result.list) : chalk.red(result.summary))
+program.command('delete')
+.option('-i, --id <id>', 'Id of the Expanse to delete')
+.action((options) =>{
+    const result = deleteExpance(Number(options.id))
+    log(result.success ? chalk.green(result.msg) : chalk.red(result.msg))
 })
 
 program.command('list')
