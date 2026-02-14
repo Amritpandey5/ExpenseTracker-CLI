@@ -1,0 +1,16 @@
+[
+  {
+    "Id": 1,
+    "Date": "2026-02-14T19:07:43.338Z",
+    "description": "Coffee",
+    "amount": 200,
+    "month": 2
+  },
+  {
+    "Id": 2,
+    "Date": "2026-02-14T19:28:46.281Z",
+    "description": "Party",
+    "amount": 500,
+    "month": 2
+  }
+]
